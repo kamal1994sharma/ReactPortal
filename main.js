@@ -10,6 +10,7 @@ window._ = require('lodash');
 
 import 'core-js/es6/array'
 import 'core-js/es6/promise'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'core-js/es6/object'
 
 // import 'jquery-ui-npm/jquery-ui.min.js'

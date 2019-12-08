@@ -9,14 +9,15 @@ export default class Login extends React.Component {
         }
     }
     save() {
-        console.log("email", this.state.email)
-        console.log("password", this.state.password)
-        if (this.state.email == "kamal" && this.state.password == "kamal") {
-            alert("user is valid")
-        }
-        else {
-            alert("invalid details")
-        }
+        window.location.href="/users"
+        // console.log("email", this.state.email)
+        // console.log("password", this.state.password)
+        // if (this.state.email == "kamal" && this.state.password == "kamal") {
+        //     alert("user is valid")
+        // }
+        // else {
+        //     alert("invalid details")
+        // }
     }
     render() {
         return (
