@@ -1,6 +1,6 @@
-import React from 'react';  
-import ReactDOM from 'react-dom';  
-import App from './App.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app.js';
 // require("bootstrap");
 // import './bootstrap/dist/css/bootstrap.min.css';  
 
@@ -17,9 +17,8 @@ import 'core-js/es6/object'
 
 // require("bootstrap");
 
-require.ensure([], ()=>{
+require.ensure([], () => {
   require('./app');
-
 })
 
 

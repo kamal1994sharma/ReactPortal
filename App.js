@@ -1,5 +1,5 @@
-import Login from './src/Authentication/login'
 import Header from './src/Header/headerComponent'
+import IndexComponent from './src/home'
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -13,30 +13,31 @@ export default function App() {
     <Router>
       <div>
         <Header />
+        <IndexComponent/>
         {/* <Link to="/">Home</Link>
         <Link to="/login">Login</Link>
         <Link to="/users">Users</Link> */}
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/login">
+        {/* <Switch> */}
+          {/* <Route path="/login">
             <Login />
-          </Route>
+          </Route> */}
           {/* <Route path="/users">
             <Users />
           </Route> */}
           {/* <Route path="/">
             <Home />
           </Route> */}
-        </Switch>
+        {/* </Switch> */}
       </div>
     </Router>
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function Home() {
+//   return <h2>Home</h2>;
+// }
 // function Users() {
 //   return <h2>Users</h2>;
 // }

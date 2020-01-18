@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/bundle'),
-    filename: 'index_bundle.js'
+    filename: '[name].js'
   },
   devServer: {
     historyApiFallback : true,
