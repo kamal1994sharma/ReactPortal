@@ -1,5 +1,5 @@
 import Header from './src/Header/headerComponent'
-import IndexComponent from './src/home'
+import IndexComponent from './src/Routes/home'
 import React from "react";
 import {
   BrowserRouter as Router,
