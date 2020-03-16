@@ -7,9 +7,8 @@ export default class Header extends React.Component {
 
         }
     };
-    loginRedirect(){
-        debugger;
-        window.location.href = "/login"
+    loginRedirect=()=>{
+        window.location.href = "/"
     }
     render() {
         return (
@@ -17,7 +16,7 @@ export default class Header extends React.Component {
             <div className="container-fluid">
                 <div className="headerTile">
                     {/* <img src="./home2.jpg" alt="HOME"/> */}
-                    <span className="headerText">
+                    <span className="headerText" onClick={()=>this.loginRedirect()}>
                         E-Kart
                     </span>
                     <span className="rightAlign" onClick={()=>this.loginRedirect()}>version 1.0</span>

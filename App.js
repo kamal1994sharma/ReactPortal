@@ -1,5 +1,8 @@
 import Header from './src/Header/headerComponent'
 import IndexComponent from './src/Routes/home'
+import Product from './src/Routes/product'
+import LoginComponent from './src/Routes/login'
+import AssessmentIndex from './src/Routes/Assessment/assessmentIndex'
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -13,31 +16,21 @@ export default function App() {
     <Router>
       <div>
         <Header />
-        <IndexComponent/>
-        {/* <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/users">Users</Link> */}
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        {/* <Switch> */}
-          {/* <Route path="/login">
-            <Login />
-          </Route> */}
-          {/* <Route path="/users">
-            <Users />
-          </Route> */}
-          {/* <Route path="/">
-            <Home />
-          </Route> */}
-        {/* </Switch> */}
+        <Switch>
+          <Route path="/product">
+            <Product />
+          </Route>
+          <Route path="/index">
+            <IndexComponent />
+          </Route>
+          <Route path="/assessmentIndex">
+            <AssessmentIndex />
+          </Route>
+          <Route path="/">
+            <LoginComponent />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
 }
-
-// function Home() {
-//   return <h2>Home</h2>;
-// }
-// function Users() {
-//   return <h2>Users</h2>;
-// }
