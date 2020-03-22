@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-// import HomeChild from './homeChild'
-// import home from './Images/ap.png'; // Tell Webpack this JS file uses this image
 export default class IndexComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -25,6 +23,7 @@ export default class IndexComponent extends React.Component {
         let url = 'https://assignment-appstreet.herokuapp.com/api/v1/products?page=' + this.state.pageState
         axios.get(url)
             .then((response) => {
+                console.log("response",response)
                 console.log("products", response.data.products);
                 if (response.data.products.length == 0) {
                     alert("maximum limit reached")

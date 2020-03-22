@@ -1,40 +1,52 @@
-.headerTile{
+body {
+    margin: 0;
+}
+
+.headerTile {
     background-color: #2143DC;
-    text-align:left;
+    text-align: left;
     padding: 8px;
 }
-.headerText{
+
+.headerText {
     font-size: 20px;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
 }
-.p-t-40{
+
+.p-t-40 {
     padding-top: 40px;
 }
-.border10{
+
+.border10 {
     border-style: solid;
-    border-width: 1px; 
+    border-width: 1px;
 }
-.mobileMargin{
+
+.mobileMargin {
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;   
+    margin-left: 10px;
 }
-.priceFont{
+
+.priceFont {
     font-family: "Times New Roman", Times, serif;
     font-size: 15px;
 }
-.colorGreen{
-    color : #0CCF8B;
+
+.colorGreen {
+    color: #0CCF8B;
     font-size: 12px !important;
     margin: 5px 1px 1px 2px;
 }
-.colorGrey{
-    color : #505654;
-    padding : 1px 5px 1px 5px;
+
+.colorGrey {
+    color: #505654;
+    padding: 1px 5px 1px 5px;
     text-decoration: line-through;
 }
+
 .img-container {
     width: 200px;
     height: 150px;
@@ -42,7 +54,8 @@
     display: inline-block;
     overflow: hidden;
 }
-div > img {
+
+div>img {
     display: block;
     position: absolute;
     top: 50%;
@@ -51,12 +64,15 @@ div > img {
     min-width: 100%;
     transform: translate(-50%, -50%);
 }
-.productPad{
+
+.productPad {
     padding: 30px;
 }
-.margProd{
+
+.margProd {
     margin: 20px;
 }
+
 .img-containerProd {
     width: 220px;
     height: 250px;
@@ -64,34 +80,65 @@ div > img {
     display: inline-block;
     overflow: hidden;
 }
-.details{
-    margin-left: 10px!important;
-    margin-right: 10px!important;
-    margin-top: 20px!important;
+
+.details {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
 }
-.uppercase{
+
+.uppercase {
     text-transform: UPPERCASE;
     font-weight: 700;
 }
-.discription{
+
+.discription {
     font-size: 13px;
 }
-.rightAlign{
-    text-align: right;
-    display:block;
+
+.rightAlign {
+    float:right !important;
 }
+
 table {
     font-family: arial, sans-serif;
-    font-size:11px;
+    font-size: 11px;
     border-collapse: collapse;
     width: 50%;
-    margin:15px;
+    margin: 15px;
 }
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 2px;
-}  
+}
+
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #576D99;
+    color: #172134;
+  }
+  
+  .topnav a.active {
+    background-color: #6684C4;
+    color: white;
+  }
+  
